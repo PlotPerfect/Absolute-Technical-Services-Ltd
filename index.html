@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Technical Services Ltd | Professional Electricians</title>
+    <meta name="description" content="Professional electrical services for domestic and commercial clients. Certified electricians providing safe, reliable solutions across the region.">
+    <!-- TailwindCSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/icons/ATSFavicon.svg" type="image/x-icon">
+</head>
+<body class="bg-gray-50 text-gray-800" style="font-family:'Montserrat',sans-serif; scroll-behavior:smooth;">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="flex items-center space-x-2">
+                        <img src="assets/images/logo/ATSLogo.webp" alt="Absolute Technical Services Ltd Logo" class="h-32 w-auto mr-2" style="max-width:128px;">
+                        <span class="text-primary-blue">
+                        </span>
+                        <div>
+                            <h1 class="text-xl font-bold text-gray-800">Absolute Technical Services Ltd</h1>
+                            <p class="text-xs text-gray-500">Professional Electrical Solutions</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="nav-link current text-blue-600 font-medium" data-page="home">Home</a>
+                    <a href="#" class="nav-link text-gray-600 hover:text-blue-600 transition-colors" data-page="about">About Us</a>
+                    <a href="#" class="nav-link text-gray-600 hover:text-blue-600 transition-colors" data-page="services">Services</a>
+                    <a href="#" class="nav-link text-gray-600 hover:text-blue-600 transition-colors" data-page="contact">Contact Us</a>
+                </div>
+                <!-- Mobile Navigation Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2">
+                <a href="#" class="block py-2 text-blue-600 font-medium" data-page="home">Home</a>
+                <a href="#" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors" data-page="about">About Us</a>
+                <a href="#" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors" data-page="services">Services</a>
+                <a href="#" class="block py-2 text-gray-600 hover:text-blue-600 transition-colors" data-page="contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active pt-24">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Powering Your World Safely and Reliably</h1>
+                        <p class="text-xl mb-8">Professional electrical services for domestic and commercial properties</p>
+                        <button class="cta-button px-8 py-3 rounded-lg font-medium text-white shadow-lg hover:shadow-xl transition-all" onclick="window.location.href='index.html#contact'">
+                            Request a Free Quote
+                        </button>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="bg-white p-6 rounded-full shadow-xl">
+                            <svg class="w-64 h-64" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" fill="#e1effe" />
+                                <path d="M100 50 L100 150" stroke="#1a56db" stroke-width="8" stroke-linecap="round" />
+                                <path d="M70 90 L130 90" stroke="#1a56db" stroke-width="8" stroke-linecap="round" />
+                                <path d="M70 110 L130 110" stroke="#1a56db" stroke-width="8" stroke-linecap="round" />
+                                <path d="M100 150 L100 170" stroke="#1a56db" stroke-width="8" stroke-linecap="round" />
+                                <path d="M85 170 L115 170" stroke="#1a56db" stroke-width="8" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Intro -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Welcome to Absolute Technical Services Ltd</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        We are a team of certified electricians dedicated to providing safe, reliable, and efficient electrical solutions for homes and businesses. With over 15 years of experience, we pride ourselves on quality workmanship and exceptional customer service.
+                    </p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md max-w-xs">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-certificate text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Fully Certified</h3>
+                        <p class="text-gray-600">All our electricians are fully qualified and certified to industry standards.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md max-w-xs">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-clock text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">24/7 Service</h3>
+                        <p class="text-gray-600">Emergency electrical services available around the clock for your peace of mind.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md max-w-xs">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-shield-alt text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Guaranteed Work</h3>
+                        <p class="text-gray-600">All our electrical work comes with a satisfaction guarantee.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Showcase -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        We offer a comprehensive range of electrical services for both residential and commercial clients.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-home text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Domestic Installations</h3>
+                        <p class="text-gray-600">Complete electrical installations and rewiring for residential properties.</p>
+                    </div>
+                    <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-building text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Commercial Wiring</h3>
+                        <p class="text-gray-600">Specialized electrical solutions for offices, retail spaces, and industrial facilities.</p>
+                    </div>
+                    <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-charging-station text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">EV Charger Installation</h3>
+                        <p class="text-gray-600">Professional installation of electric vehicle charging points.</p>
+                    </div>
+                    <div class="service-card bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="service-icon w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-clipboard-check text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">EICRs</h3>
+                        <p class="text-gray-600">Electrical Installation Condition Reports to ensure your property meets safety standards.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-10">
+                    <button class="cta-button px-6 py-3 rounded-lg font-medium text-white" data-page="services">
+                        View All Services
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">What Our Clients Say</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="testimonial-card p-6 rounded-lg">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-quote-left text-3xl"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            "Absolute Technical Services rewired our entire home efficiently and professionally. Their team was courteous, tidy, and completed the work on schedule. Highly recommended!"
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold">Sarah Johnson</h4>
+                                <p class="text-sm text-gray-500">Homeowner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card p-6 rounded-lg">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-quote-left text-3xl"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            "We've been using Absolute Technical Services for all our office electrical needs for over 5 years. Their response time and quality of work is exceptional."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold">Michael Roberts</h4>
+                                <p class="text-sm text-gray-500">Business Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card p-6 rounded-lg">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-quote-left text-3xl"></i>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            "The team installed EV charging points at our property. They were knowledgeable, efficient, and the installation was completed to a high standard."
+                        </p>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold">Emma Thompson</h4>
+                                <p class="text-sm text-gray-500">Property Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Us Page -->
+    <div id="about" class="page pt-24">
+        <!-- Company History -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h1 class="text-3xl font-bold mb-4">About Absolute Technical Services Ltd</h1>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                        <h2 class="text-2xl font-semibold mb-4">Our Story</h2>
+                        <p class="text-gray-600 mb-4">
+                            Founded in 2010, Absolute Technical Services Ltd began as a small family-run business with a mission to provide reliable and high-quality electrical services to the local community.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            Over the years, we've grown into a trusted name in the industry, serving both residential and commercial clients across the region. Our team has expanded to include highly skilled electricians, each bringing specialized expertise to the company.
+                        </p>
+                        <p class="text-gray-600">
+                            Despite our growth, we've maintained our core values of integrity, quality workmanship, and exceptional customer service. We believe in building lasting relationships with our clients by delivering on our promises and exceeding expectations.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <svg class="w-full h-auto" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="300" fill="#e1effe" />
+                                <circle cx="200" cy="120" r="60" fill="#1a56db" />
+                                <rect x="140" y="190" width="120" height="80" fill="#1a56db" />
+                                <circle cx="170" cy="110" r="10" fill="white" />
+                                <circle cx="230" cy="110" r="10" fill="white" />
+                                <path d="M170 150 Q200 180 230 150" stroke="white" stroke-width="5" fill="none" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Certifications -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Our Certifications</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        We maintain the highest industry standards through continuous training and certification.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-award text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">NICEIC Approved</h3>
+                        <p class="text-gray-600">Registered with the National Inspection Council for Electrical Installation Contracting</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-certificate text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">City & Guilds</h3>
+                        <p class="text-gray-600">All our electricians hold City & Guilds qualifications in electrical installation</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Part P Registered</h3>
+                        <p class="text-gray-600">Certified to carry out and certify domestic electrical installations</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-bolt text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">EV Chargepoint Approved</h3>
+                        <p class="text-gray-600">Certified installers of electric vehicle charging points</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
+                    <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Our experienced team of electricians is committed to providing the highest quality service.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                        <div class="h-64 bg-gray-200"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-1">Dave Rayner</h3>
+                            <p class="text-blue-600 mb-3">Founder & Lead Electrician</p>
+                            <p class="text-gray-600">
+                                With decades of experience in the electrical industry, Dave Rayner leads our team with expertise, dedication, and a commitment to quality.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                        <div class="h-64 bg-gray-200"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-1">Dave Lochead</h3>
+                            <p class="text-blue-600 mb-3">Founder & Lead Electrician</p>
+                            <p class="text-gray-600">
+                                Dave Lochead brings a wealth of knowledge and a passion for delivering safe, reliable electrical solutions to every project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page pt-24">
+        <!-- Services Header -->
+        <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl font-bold mb-4">Our Electrical Services</h1>
+                <p class="text-xl max-w-3xl mx-auto">
+                    We provide comprehensive electrical solutions for residential and commercial properties, delivered by our team of certified professionals.
+                </p>
+            </div>
+        </section>
+        <!-- Services List -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Domestic Services -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-6 flex items-center">
+                            <i class="fas fa-home text-blue-600 mr-3"></i>
+                            Domestic Electrical Services
+                        </h2>
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-xl font-semibold mb-3">Full House Rewiring</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Complete rewiring services for homes of all ages, ensuring your electrical system meets modern safety standards and requirements.
+                                </p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Minimal disruption to your home</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Full testing and certification</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Compliance with latest regulations</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-xl font-semibold mb-3">Consumer Unit Upgrades</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Modernize your fuse box with the latest consumer unit technology, enhancing safety and electrical protection in your home.
+                                </p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>RCD protection for all circuits</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Metal-enclosed units for fire safety</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Surge protection options available</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-xl font-semibold mb-3">EV Charger Installation</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Professional installation of electric vehicle charging points for your home, making EV ownership convenient and efficient.
+                                </p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>OLEV approved installer</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Various charging speeds available</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Smart charging options</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Commercial Services -->
+                    <div>
+                        <h2 class="text-2xl font-bold mb-6 flex items-center">
+                            <i class="fas fa-building text-blue-600 mr-3"></i>
+                            Commercial Electrical Services
+                        </h2>
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-xl font-semibold mb-3">Commercial Installations</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Complete electrical installations for offices, retail spaces, and industrial facilities, designed to meet your specific business needs.
+                                </p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Tailored to your business requirements</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Minimal disruption to operations</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Full compliance with commercial regulations</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-xl font-semibold mb-3">Periodic Testing & Inspection</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Regular electrical testing and inspection services to ensure your commercial property remains safe and compliant.
+                                </p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>EICR certification</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Detailed reports with recommendations</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Insurance compliance</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <h3 class="text-xl font-semibold mb-3">Emergency Lighting</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Installation and maintenance of emergency lighting systems to ensure safety and compliance with regulations.
+                                </p>
+                                <ul class="text-gray-600 space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>BS 5266 compliant systems</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Regular testing and maintenance</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                        <span>Energy-efficient LED options</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional Services -->
+                <div class="mt-16">
+                    <h2 class="text-2xl font-bold mb-6 text-center">Additional Services</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-tools text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Fault Finding & Repairs</h3>
+                            <p class="text-gray-600">
+                                Quick and efficient diagnosis and repair of electrical faults in both domestic and commercial properties.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-lightbulb text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">LED Lighting Upgrades</h3>
+                            <p class="text-gray-600">
+                                Energy-efficient lighting solutions to reduce your electricity bills and carbon footprint.
+                            </p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                            <div class="text-blue-600 mb-4">
+                                <i class="fas fa-plug text-3xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">Additional Sockets & Points</h3>
+                            <p class="text-gray-600">
+                                Installation of new power points, data points, and TV/satellite outlets to meet your needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                    Contact us today for a free, no-obligation quote for your electrical project.
+                </p>
+                <button class="cta-button px-8 py-3 rounded-lg font-medium text-white shadow-lg hover:shadow-xl transition-all" data-page="contact">
+                    Contact Us Now
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Us Page -->
+    <div id="contact" class="page pt-24">
+        <!-- Contact Header -->
+        <section class="py-12 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <div class="mt-10">
+                    <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+                    <p class="text-xl max-w-3xl mx-auto">
+                        Get in touch with our team for a free quote or to discuss your electrical requirements.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Information and Form -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row">
+                    <!-- Contact Information -->
+                    <div class="lg:w-1/3 mb-10 lg:mb-0 lg:pr-8">
+                        <h2 class="text-2xl font-bold mb-6">Get In Touch</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Our Address</h3>
+                                    <p class="text-gray-600">
+                                        Unit 3 Home Farm Industrial Estate Hunsdon Road WARE, Unit 3 Ware Hertfordshire SG12 8LA GBR
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Phone</h3>
+                                    <p class="text-gray-600">
+                                        01234 567890<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Email</h3>
+                                    <p class="text-gray-600">
+                                        info@absolutetechnical.com<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold mb-1">Opening Hours</h3>
+                                    <p class="text-gray-600">
+                                        Monday - Friday: 8am - 6pm<br>
+                                        Saturday: 9am - 1pm<br>
+                                        24/7 Emergency Service
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h3 class="font-semibold mb-3">Follow Us</h3>
+                            <div class="flex space-x-4">
+                                <a href="#" class="social-icon text-gray-600 hover:text-blue-600">
+                                    <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                                <a href="#" class="social-icon text-gray-600 hover:text-blue-600">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="#" class="social-icon text-gray-600 hover:text-blue-600">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="#" class="social-icon text-gray-600 hover:text-blue-600">
+                                    <i class="fab fa-linkedin-in text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="lg:w-2/3">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                            <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+                            <form id="contact-form" class="space-y-6">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                        <input type="text" id="name" name="name" class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2" required>
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                        <input type="email" id="email" name="email" class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2" required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2" required>
+                                </div>
+                                <div>
+                                    <label for="service" class="block text-gray-700 mb-2">Service Required</label>
+                                    <select id="service" name="service" class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2">
+                                        <option value="">Please select...</option>
+                                        <option value="domestic">Domestic Installation</option>
+                                        <option value="commercial">Commercial Wiring</option>
+                                        <option value="ev">EV Charger Installation</option>
+                                        <option value="eicr">Electrical Inspection (EICR)</option>
+                                        <option value="fault">Fault Finding</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                                    <textarea id="message" name="message" rows="5" class="contact-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2" required></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="cta-button w-full py-3 rounded-lg font-medium text-white">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Map Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-6 text-center">Find Us</h2>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <!-- Google Map Placeholder -->
+                    <div class="w-full h-96 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d19733.992664852674!2d-0.06358332738392417!3d51.81074526736641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sUnit%203%20Home%20Farm%20Industrial%20Estate%20Hunsdon%20Road%20WARE%2C%20Unit%203%20Ware%20Hertfordshire%20SG12%208LA%20GBR!5e0!3m2!1sen!2suk!4v1752611031449!5m2!1sen!2suk" width="100%" height="100%" style="border:0; min-height: 350px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-bolt text-2xl text-blue-400"></i>
+                        <h3 class="text-xl font-bold">Absolute Technical Services Ltd</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Professional electrical services for domestic and commercial clients. Certified electricians providing safe, reliable solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="home">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="about">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="services">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="services">Domestic Installations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="services">Commercial Wiring</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="services">EV Charger Installation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="services">Electrical Inspections</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors" data-page="services">Fault Finding</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>Unit 3 Home Farm Industrial Estate Hunsdon Road WARE, Unit 3 Ware Hertfordshire SG12 8LA GBR</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>01234 567890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-blue-400"></i>
+                            <span>info@absolutetechnical.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-3 text-blue-400"></i>
+                            <span>Mon-Fri: 8am-6pm, Sat: 9am-1pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-400 mb-4 md:mb-0 text-center">
+                    <div>&copy; 2025 Absolute Technical Services Ltd. All rights reserved.</div>
+                    <div>Website designed and developed by <a href="https://www.plotperfectstudios.co.uk" target="_blank" rel="noopener" class="text-blue-400 hover:underline">Plot Perfect Studios Ltd.</a></div>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="cookie-policy.html" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

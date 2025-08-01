@@ -1,0 +1,85 @@
+:root {
+    --primary-blue: #1a56db;
+    --dark-blue: #1e429f;
+    --light-blue: #e1effe;
+    --dark-grey: #374151;
+    --light-grey: #f3f4f6;
+    --cursor-url: url('../images/cursor/ATSCursor.svg'), auto;
+    --click-cursor-url: url('../images/cursor/ClickCursor.svg'), auto;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link.current::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-blue);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+.testimonial-card {
+    background-color: var(--light-blue);
+    border-left: 4px solid var(--primary-blue);
+}
+
+.cta-button {
+    background-color: var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--dark-blue);
+}
+
+.service-icon {
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+}
+
+.contact-input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.3);
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
+html, body {
+    cursor: var(--cursor-url);
+}
+
+button:hover,
+a.cta-button:hover,
+button.cta-button:hover {
+    cursor: var(--click-cursor-url) !important;
+}
+
+.nav-link:hover,
+a.nav-link:hover,
+button.nav-link:hover {
+    cursor: var(--click-cursor-url) !important;
+}
